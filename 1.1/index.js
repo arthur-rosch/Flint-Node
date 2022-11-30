@@ -1,11 +1,6 @@
 const validator = require("validator");
 const readXlsxFile = require("read-excel-file/node");
 
-var arrayName = [],
-  arrayEmails = [],
-  arrayYears = [],
-  arrayEnrollment = [];
-
 readXlsxFile("./Alunos.xlsx").then((rows) => {
   for (let index = 0; index < rows.length; index++) {
     let check = false;
