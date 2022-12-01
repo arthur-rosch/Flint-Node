@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  margin: 18rem 0;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftArrow:hover {
+  transition: 0.3s;
+  transform: translateX(-12px);
+}
+.rightArrow:hover {
+  transition: 0.3s;
+  transform: translateX(12px);
+}
