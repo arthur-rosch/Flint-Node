@@ -1,5 +1,5 @@
 const fs = require("fs");
-const JsonCars = require("./doc/jsonCars.json");
+const cars = require("./cars.json");
 const readXlsxFile = require("read-excel-file/node");
 
 const schema = {
@@ -28,8 +28,8 @@ const schema = {
   },
 };
 
-JsonCars.shift();
-readXlsxFile("./Carros.xlsx").then((rows) => {
+cars.shift();
+readXlsxFile("./doc/Carros.xlsx").then((rows) => {
   for (let index = 1; index < rows.length; index++) {
     const brand = rows[index][0];
     const model = rows[index][1];
@@ -38,8 +38,8 @@ readXlsxFile("./Carros.xlsx").then((rows) => {
     const color = rows[index][4];
     const photo = rows[index][5];
 
-    readXlsxFile("./doc/Carros.xlsx", { schema }).then(({ rows, errors }) => {
-      errors.length === 0;
+    readXlsxFile("./doc/Carros.xlsx", { schema }).then(({ err }) => {
+      err.length === 0;
     });
 
     const newCar = {
@@ -50,12 +50,15 @@ readXlsxFile("./Carros.xlsx").then((rows) => {
       color: color,
       photo: photo,
     };
-    JsonCars.push(newCar);
+    cars.push(newCar);
 
-    fs.writeFile("JsonCars.json", JSON.stringify(JsonCars), (err) => {
-      if (err) throw err;
-
-      console.log("Done writing");
+    fs.writeFile("cars.json", JSON.stringify(JsonCars), (err) => {
+      if (err) {
+        console.log(err);
+        return;
+      } else {
+        console.log("Done writing");
+      }
     });
   }
 });
