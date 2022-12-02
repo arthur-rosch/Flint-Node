@@ -12,7 +12,7 @@ test("Return number of children", () => {
 test("Correct number of stops", () => {
   expect(functions.numberOfStops(["children", "adult"], 6.5)).toBe(7);
 });
-test("Cat food price", () => {
+test("Spent on food", () => {
   expect(
     functions.expensesPerMeal(
       ["adult"],
