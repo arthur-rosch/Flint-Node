@@ -88,4 +88,10 @@ function expensesPerMeal(numberOfStops, passengerList) {
   }
 }
 
-console.log(expensesPerMeal(3, ["children", "children"]));
+module.exports(
+  expensesForATrip,
+  countingAdults,
+  countingChildren,
+  numberOfStops,
+  expensesPerMeal
+);
