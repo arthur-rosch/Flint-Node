@@ -1,6 +1,15 @@
 {
-  "dependencies": {
-    "read-excel-file": "^5.5.3",
-    "validator": "^13.7.0"
-  }
+    "scripts": {
+        "test": "jest --coverage"
+    },
+    "dependencies": {
+        "node-fetch": "^2.6.7",
+        "read-excel-file": "^5.5.3",
+        "simple-excel-to-json": "^2.3.0",
+        "validator": "^13.7.0",
+        "write-excel-file": "^1.4.15"
+    },
+    "devDependencies": {
+        "jest": "^29.3.1"
+    }
 }
