@@ -35,21 +35,21 @@ submit.addEventListener("click", (e) => {
   year.value = "";
   color.value = "";
 });
-function searchByBrand(brandName, arrayOfCars) {
+function searchByBrand(brandName: string, arrayOfCars: object[]) {
   let searchedBrandsList = [];
-  arrayOfCars.forEach((element) => {
+  arrayOfCars.forEach((element: string) => {
     element.Brand === brandName
       ? searchedBrandsList.push(element)
       : console.log("Essa Marca não tem em nosso estoque");
   });
 }
-function brandsAvailable(arrayOfCars) {
+function brandsAvailable(arrayOfCars: object[]): object[] {
   let brandsAvailable = arrayOfCars.filter((a, i) => {
     arr.indexOf(a) === i;
   });
   return brandsAvailable;
 }
-function ShowProperties(array, arrayStrings) {
+function ShowProperties(array: object[], arrayStrings: object[]): object[] {
   let ListOfCarsProperties = [];
 
   array.forEach((item) => {
