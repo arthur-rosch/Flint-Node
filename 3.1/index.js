@@ -1,4 +1,4 @@
-function tabuada(numero) {
+function tabuada(numero: number): void {
   let tabuada = [],
     próximasTabuada = [];
   for (let index = 0; index < 10; index++) {
@@ -11,7 +11,7 @@ function tabuada(numero) {
   console.log(tabuada, próximasTabuada);
 }
 
-function pontoDeÔnibus(pares) {
+function pontoDeÔnibus(pares: object[]): number {
   if (pares[0][1] !== 0) {
     console.log("Valor Invalido, na primeira parada ninguém sai");
   } else {
@@ -23,7 +23,7 @@ function pontoDeÔnibus(pares) {
     return pessoas;
   }
 }
-function Bingo(array) {
+function Bingo(array: object[]): void {
   let Bingo = 0;
   array.array.forEach((element) => {
     element === 2 && Bingo++;
