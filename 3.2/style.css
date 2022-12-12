@@ -19,7 +19,8 @@ form {
   display: flex;
   flex-direction: column;
 }
-form > input {
+form > input,
+select {
   color: white;
   outline: none;
   border: none;
