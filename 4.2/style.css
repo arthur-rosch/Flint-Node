@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+}
+main {
+  margin: 0 1rem;
+}
+.navBar {
+  margin-bottom: 3rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto;
+}
+.navBarButtons > a {
+  color: black;
+  padding: 1rem 5.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  text-decoration: none;
+  background-color: yellow;
+}
+.banerOffers {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner > img {
+  width: 71.5vw;
+  height: 81.5vh;
+  margin-right: 1rem;
+}
+.cardOffers {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.Offer {
+  width: 23vw;
+  height: 40vh;
+  margin-top: 1rem;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: yellow;
+}
+.qualitiesCards {
+  margin-top: 0rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qualitieCard {
+  width: 23.5vw;
+  height: 39vh;
+  margin-right: 0.7rem;
+  background-color: white;
+}
+.bannerTaco {
+  width: 96vw;
+  height: 39vh;
+  margin: 1rem 2rem;
+  background-color: white;
+}
+.imageGrid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 100vh;
+}
