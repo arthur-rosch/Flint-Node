@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navBar">
+        <section class="flitLogo">
+          <img
+            src="../../assets/logo_semsite_semfundo (1).png"
+            alt="Logo Canto superior esquerdo"
+            width="100px"
+            height="75px"
+          />
+        </section>
+        <section class="navBarNavegation">
+          <a href="../Home/index.html">Home</a>
+          <a href="./index.html">Cadastrar Filme</a>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <section class="formMovies">
+        <form action="POST">
+          <input type="text" placeholder="Titulo" />
+          <input type="text" placeholder="Gênero" />
+          <input type="number" placeholder="Nota" />
+          <textarea name="Sinopse" id="" cols="50" rows="10"></textarea>
+        </form>
+        <button type="submit">Enviar</button>
+      </section>
+    </main>
+  </body>
+</html>

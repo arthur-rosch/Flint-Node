@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(0, 0, 0);
+}
+.navBar {
+  width: 100vw;
+  height: 14vh;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flitLogo {
+  margin-left: 1rem;
+}
+.navBarNavegation > a {
+  color: #ffff;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+main {
+  width: 100vw;
+  height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formMovies > form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.formMovies > form > input,
+.formMovies > form > textarea {
+  border: none;
+  width: 25vw;
+  height: 10vh;
+  margin: 1rem 0;
+  border-radius: 6px;
+  background: rgb(68, 68, 68);
+}
+.formMovies > form > input::placeholder {
+  padding-left: 1rem;
+}
+.formMovies > button[type="submit"] {
+  width: 25vw;
+  height: 5vh;
+  border-radius: 6px;
+  background: rgb(68, 68, 68);
+  transition: 0.5s background;
+}
+.formMovies > button[type="submit"]:hover {
+  background-color: #fff;
+}
