@@ -51,7 +51,13 @@ main {
 }
 .cardMovie {
   width: 15vw;
-  height: 20vh;
+  height: 21vh;
   margin: 1rem 2rem;
   background: rgb(68, 68, 68);
+}
+#title,
+#genre,
+#note,
+#synopsis {
+  font-size: 12px;
 }
